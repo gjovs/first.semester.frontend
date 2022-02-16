@@ -105,6 +105,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background: #00d2ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
@@ -113,8 +114,8 @@ main{
 }
 .content-image{
   
-    position: absolute;
-    top: 43%;
+    position: relative;
+    top: 30%;
     width: 700px;
     height: 550px;
     background-image: url(https://www.clashroyaledicas.com/wp-content/uploads/2016/12/mago-eletrico-do-clash-royale-tropa-electro-wizard.png);
@@ -127,7 +128,7 @@ footer{
     position: absolute;
     width: 100%;
     height: 40px;
-    top: 97.5%;
+    top: 95.7%;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
 }
