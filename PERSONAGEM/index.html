@@ -14,7 +14,7 @@
             <ul >
                 <li class="item"><a href="#home">Home</a></li>
                 <li class="item"><a target='_blank' href="https://www.clashroyaledicas.com/2016/12/mago-eletrico-carta-lendaria-informacoes-decks-estrategias-wiki.html">Dicas</a></li>
-                <li class="item"><a target='_blank' href="https://www.youtube.com/watch?v=DhvGQWZWRB0&ab_channel=ClashcomNery">Videos</a></li>
+                <li class="item"><a onclick="ShowVideo()">Videos</a></li>
             </ul>
     </header>
     <main>
@@ -22,11 +22,24 @@
         <p class="summary">
             Esta carta é desbloqueada na Eletrovale (Arena 11) e custa 4 de Elixir para ser colocada na arena. O Mago Elétrico é uma tropa de alcance duplo, com pontos de vida e danos moderados. Seus ataques atordoam momentaneamente seus alvos. Ele atordoa e causa um pouco de dano na área assim que é colocado na arena..... Veja mais em <a target='_blank'href="https://www.clashroyaledicas.com/2016/12/mago-eletrico-carta-lendaria-informacoes-decks-estrategias-wiki.html">Wiki Mago Elétrico</a>
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DhvGQWZWRB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DhvGQWZWRB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
         <div class="content-image"></div>
     </main>
     <footer>
         <p>Copyright @ 2022 | <a target='_blank' href="https://github.com/Guilherme-Joviniano/">Guilherme Joviniano</a> </p>
     </footer>
+    <script>
+        function ShowVideo(){
+            let video = document.getElementById('video')
+            if (video.style.display == 'block'){
+              
+                video.style.display = 'none'
+            
+            }
+            else{
+                video.style.display = 'block'    
+            }
+        }
+    </script>
 </body>
 </html>
