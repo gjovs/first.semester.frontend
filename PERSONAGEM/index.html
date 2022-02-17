@@ -10,11 +10,11 @@
 </head>
 <body>
     <header class="navbar">
-            <img class='logo' src="assets/imgs/logo.png" alt="">
+            <a target='_blank' href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale"><img class='logo' src="assets/imgs/logo.png" alt="Logo do Clash Royale" ></a>
             <ul >
                 <li class="item"><a href="#home">Home</a></li>
-                <li class="item"><a target='_blank' href="https://www.clashroyaledicas.com/2016/12/mago-eletrico-carta-lendaria-informacoes-decks-estrategias-wiki.html">Dicas</a></li>
-                <li class="item"><a onclick="ShowVideo()">Videos</a></li>
+                <li class="item"><a onclick="ShowDicas()">Dicas</a></li>
+                <li class="item"><a onclick="ShowVideo()">Video</a></li>
             </ul>
     </header>
     <main>
@@ -22,6 +22,14 @@
         <p class="summary">
             Esta carta é desbloqueada na Eletrovale (Arena 11) e custa 4 de Elixir para ser colocada na arena. O Mago Elétrico é uma tropa de alcance duplo, com pontos de vida e danos moderados. Seus ataques atordoam momentaneamente seus alvos. Ele atordoa e causa um pouco de dano na área assim que é colocado na arena..... Veja mais em <a target='_blank'href="https://www.clashroyaledicas.com/2016/12/mago-eletrico-carta-lendaria-informacoes-decks-estrategias-wiki.html">Wiki Mago Elétrico</a>
         </p>
+        <div class="dicas" id='dicas'>
+            <h2>Dicas</h2>
+            <p>
+                Tenha em mente que o Mago Elétrico tem a capacidade de focar em dois alvos ao mesmo tempo, mas ele não causa dano em área. Então não utilize-o como uma tropa de suporte com dano em área.
+                Visto ele utiliza as duas mãos, cada uma dela causa metade do seu dano total informado abaixo na tabela.
+                Porém se houver apenas um alvo em seu alcance, ele irá zapear o alvo com ambas as mãos, causando o dano total.
+            
+            </p></div>
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DhvGQWZWRB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
         <div class="content-image"></div>
     </main>
@@ -29,6 +37,19 @@
         <p>Copyright @ 2022 | <a target='_blank' href="https://github.com/Guilherme-Joviniano/">Guilherme Joviniano</a> </p>
     </footer>
     <script>
+        function ShowDicas(){
+            let dicas = document.getElementById('dicas')
+            if (dicas.style.display == 'block'){
+              
+              dicas.style.display = 'none'
+          
+          }
+          else{
+              dicas.style.display = 'block'    
+
+
+          }
+        }
         function ShowVideo(){
             let video = document.getElementById('video')
             if (video.style.display == 'block'){
@@ -38,6 +59,8 @@
             }
             else{
                 video.style.display = 'block'    
+
+
             }
         }
     </script>

@@ -94,9 +94,6 @@ iframe{
     left: 64%;
     top: 55%;
     transition: .5s all ease-in-out;
-    
-   
-        
 }
 
 main{
@@ -123,6 +120,23 @@ main{
     background-image: url(https://www.clashroyaledicas.com/wp-content/uploads/2016/12/mago-eletrico-do-clash-royale-tropa-electro-wizard.png);
     
     }
+.dicas{
+    display: none;
+    position: absolute;
+    text-align: justify;
+    width: 500px;
+    left: 1%;
+    color: #fff;
+    top: 20%;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.171);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    padding: 20px;
+}
+
 footer{
     display: flex;
     align-items: center;
