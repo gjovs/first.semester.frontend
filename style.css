@@ -24,7 +24,7 @@ body{
     background-color: #fff;
 }
 .container{
-    
+    margin: 0 auto;
     width: 1920px;
     height: 100%;
 
