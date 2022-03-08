@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="assets/style/styleIcon.css">
+</head>
+<body>
+
+    <div class="card">
+        <span class="name" id='mainName'></span>
+        <span class="text" id="mainText"></span>
+        <div class="button"><a href="index.html">Voltar</a></div>
+    </div>
+    
+</body>
+<script>
+const textArray = new Array(
+    ' Em uma tabela de estilo de plotagem nomeado, você pode especificar a cor, espessura de linha, tipo de linha, tela e assim por diante que os objetos em uma camada específica terão quando plotados.',
+    'Use a caixa de diálogo Gerenciador de plotagem para criar e gerenciar grandes listas de plotagem e enviar qualquer quantidade de trabalhos de plotagem para uma plotadora ou impressora',
+    'Se você usava a função Backup e Restauração para fazer backup de arquivos ou criar backups de imagem do sistema nas versões anteriores do Windows, seu backup antigo ainda está disponível no Windows 10. Na caixa de pesquisa na barra de tarefas, digite painel de controle.',
+    'Personaliza a barra de tarefas, exemplo; os tipos de itens a serem exibidos e como devem aparecer',
+    'Facilita o uso do computador',
+    'Verifica os status de rede, altera as suas configurações e defina preferências para compartilhar arquivos e impressoras',
+    'Sincroniza os arquivos entre seu computador e as pastas de redes',
+    'Gerenciar conexão do RemoteApp e Área de trabalho',
+    'Gerencie as configurações de cada usuário e defina permisões e etc...',
+    'Protege o computador usando a criptografia de Unidade de disco Bitlocker',
+    'Define a data, hora e o fuso horário do seu computador',
+    'Exibir e gerenciar dispositivos, impressoras e trabalhos de impressão',
+    'Ajuda a proteger seus arquivos de falha na unidade',
+    'Definir configurações administrativas para seu computador',
+    'Adiciona,altera e gerencia fontes no computador',
+    'Gerencia seus Credenciais no windows',
+    'Gerencia as cores e suas paletas',
+    'Exibir e atualizar as configurações de Hardware e o driver do dispositivo',
+    'Manter historicos de arquivos',
+    'Java Control Painel',
+    'Microsoft outlook perfis',
+    'Personalize as configurações do mouse: Configuração de botões, ponteiros, velocidade duplo e movimentação',
+    'Define as configurações de conexão e exibição da internet',
+    'Energia o maxime o desempenho escolhendo como o computador vai gerenciar a energia',
+    'Altera o modo de Indexação do windows para deixar as pesquisas mais rapidas',
+    'Personaliza a exibição de arquivos e pastas',
+    'Acesse seus arquivos de trabalho em qualquer lugar, a qualquer momento',
+    'Desinstalar ou alterar programas do computador',
+    'Escolha os programas que o Windows deverá usar para atividades como navegação na web, edição de fotos, envio de email e reprodução de musicas',
+    'Configure o modo de funcionamento do reconhecimento de fala no seu computador',
+    'Recuperação',
+    'Personalizar as configurações para a exibição de idiomas, numeros, horas e datas',
+    'Alterar as configurações padrão de CDs, DVDs e dispositivos para que você possa reproduzir músicas, ver imagens, instalar software e jogar automaticamente',
+    'Revise mensagens recentes e resolva problemas com seu computador',
+    'Exibir informações sobre o computador e alterar configurações de hardware, desempenho e conexões remotas',
+    'Solucionar e corrigir problemas comuns no computador',
+    'Configure os dispositivos  de áudio ou altere o esquema de som do computador.',
+    'Personalize as configurações do teclado, como a taxa de intermitência do cursor e a taxa de repetição de caracteres',
+    'Configure as regras de discagem do telefone e as propriedades do modem',
+    'Configurar opções de segurança do firewall para proteger o computador contra hackers e programas mal intencionados.',
+    )
+
+const textLocal = document.getElementById('mainText');
+
+let key = localStorage.getItem('Id')
+console.log(key)
+let title = localStorage.getItem('name')
+document.getElementById('title').innerHTML = title
+document.getElementById('mainName').innerHTML = title
+textLocal.innerHTML = textArray[key]
+
+
+</script>
+</html>
