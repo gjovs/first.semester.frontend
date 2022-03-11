@@ -18,6 +18,18 @@
         opacity: 1;
     }
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 a{
     text-decoration: none;
     color: #000;
@@ -30,7 +42,10 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    
+    background: linear-gradient(45deg, #4286f4, #373B44, #4286f4, #373B44);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 .card{
     color: #fff;
@@ -65,6 +80,8 @@ body{
     font-weight: bolder;
 
 }
+
+
 .button{
     position: fixed;
     top: 40px;
