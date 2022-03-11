@@ -39,6 +39,7 @@ body{
    
 }
 .wrapper{
+    border-radius: 40px; 
     overflow: hidden;
     flex: 1;
 }
