@@ -3,6 +3,21 @@
     padding: 0;
     margin: 0;
 }
+@keyframes fade{
+    0%{
+        left: 50px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 a{
     text-decoration: none;
     color: #000;
@@ -51,14 +66,22 @@ body{
 
 }
 .button{
-    border-radius: 16px;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 16px;
     cursor: pointer;
     display: flex;
     place-content: center;
     place-items: center;
-    width: 300px;
+    width: 50px;
     height: 50px;
+    font-weight: bolder;
     font-size: 2rem;    
+    transition: .2s all ease-in-out;
 }
 .button a{
     color: #fff;
@@ -66,7 +89,11 @@ body{
     border-radius: 16px;
     transition: .5s all ease-in-out;
 }
-.button a:hover{
-    background-color:#4286f4;
+.button:hover::after{
+    position: fixed;
+    left: 80px ;
+    content: 'Voltar';
+    color: #000;
+    animation: fade .5s;
 
 }
