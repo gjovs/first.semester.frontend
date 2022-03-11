@@ -14,7 +14,15 @@ a{
 a:hover{
     color: darkblue
 }
+
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 100vw;
+    flex-direction: column;
+}
 .title{
+    flex-grow: 1;
     color: #fff;
     background: #373B44;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
@@ -31,10 +39,8 @@ a:hover{
 }
 .container{
 
-
-    height: 100vh;
+    flex-grow: 4;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,7 +48,8 @@ a:hover{
     
 }
 .item{
-
+    display: flex;
+    width: 300px;
     margin: 20px;
 }
 
@@ -55,10 +62,11 @@ a:hover{
 }
 
 .icon-name{
+    
     border-radius: 10px;
-    transition: .5s all ease-in-out;
-    max-width: 200px;    
+    transition: .5s all ease-in-out;    
     padding: 10px; 
+
 }
 .icon-name:hover{
     background-color: #219ebc5e;
@@ -67,7 +75,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    flex-grow: 1;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     background: #373B44;  /* fallback for old browsers */
@@ -82,4 +90,3 @@ footer span{
     font-weight: bolder;
     
 }
-
