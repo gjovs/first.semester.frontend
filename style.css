@@ -27,14 +27,12 @@ body{
     margin: 0 auto;
     width: 1920px;
     height: 100%;
-
-
-
 }
 .container-blocs{
     display: flex;
     align-items:  center;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 200px;
     width: 1600px;
     height: 100%;
@@ -48,6 +46,7 @@ body{
     border-radius: 40px;
     background-size: cover;
     background-color: antiquewhite;
+    background-position:  center;
     transition: .5s all ease;
     flex-grow: 1;
     height: 400px;
@@ -73,3 +72,4 @@ body{
 .block span:hover{
     background-color: #fff;
 }
+
