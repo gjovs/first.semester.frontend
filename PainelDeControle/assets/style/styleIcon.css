@@ -108,6 +108,7 @@ body{
     transition: .5s all ease-in-out;
 }
 .button:hover::after{
+    color: #fff;
     position: fixed;
     left: 80px ;
     content: 'Voltar';
