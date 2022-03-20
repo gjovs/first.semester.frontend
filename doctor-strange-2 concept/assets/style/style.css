@@ -30,7 +30,7 @@ html,body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0.85) 40.62%, rgba(0, 0, 0, 0) 62.5%),
-    url(assets/imgs/background.jpg);
+    url(../imgs/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 15%;
